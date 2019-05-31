@@ -56,7 +56,9 @@ body {
     color: white;
 }
 
-#profolio{
-    font-size:46px;
+#hd-profolio{
+    font-size:40px;
     font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
 }

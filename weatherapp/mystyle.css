@@ -1,0 +1,143 @@
+html {
+    font-family: "Avenir Next", Helevetica, sans-serif;
+    text-align: center;
+    background-color: #f3f8ff;
+}
+
+footer{
+
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding-bottom: 20px;
+}
+
+#3hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(91, 83, 100, 0.2);
+    color: black;
+}
+
+tbody tr:hover {
+    background-color: rgba(91, 83, 100, 0.3);
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(91, 83, 100, 0.2);
+    z-index: -1;
+}
+
+#container {
+    width: auto;
+    height: auto;
+}
+
+
+
+input {
+    width: 280px;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #c8ccd4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+}
+
+button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    background-color: #deecff;
+    transition-duration: 0.4s;
+    border: none;
+    color: black;
+    padding: 12px 32px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #c6cfff;
+    /* Green */
+    color: white;
+}
+
+#container {
+    width: auto;
+    height: auto;
+}
+
+#temp {
+    font-size: 40px;
+    margin: 15px;
+}
+
+
+#humi {
+    margin-bottom: -15px;
+}
+
+#weatherc {
+    height: 40px;
+}
+
+
+@media (min-width: 800px) {
+
+    #temp {
+        float: left;
+        padding-left: 50px;
+        width: 50%
+    }
+
+    #humi,
+    #wind {
+        float: left;
+        width: 25%;
+        text-align: left;
+    }
+
+    #humi {
+        margin-bottom: -15px;
+    }
+
+    #weatherc {
+        clear: both;
+        height: 40px;
+    }
+
+}

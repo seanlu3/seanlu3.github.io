@@ -1,0 +1,68 @@
+html {
+    font-family: "Avenir Next", Helevetica, sans-serif;
+    background-color: #fff0bc;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    margin-top: -15px;
+}
+
+#dropBox {
+    width: 140px;
+    height: 130px;
+    background-color: #ffa952;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 8;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+#current {
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+#Latitude {
+    float: left;
+    width: 35%;
+    margin-left: 13%;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    margin-left: 45%;
+}
+
+button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    background-color: #deecff;
+    transition-duration: 0.4s;
+    border: none;
+    color: black;
+    padding: 12px 32px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #c6cfff;
+    /* Green */
+    color: white;
+}

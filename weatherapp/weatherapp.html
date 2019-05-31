@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather app</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <a href="/seanlu3.github.io/index.html"><button>Home</button></a>
+    <p id="datetime"></p>
+    <p>Weather</p>
+    <input placeholder="Enter a city name" type="text" id="city"> <br>
+    <button type="button" onclick="showWeather(); showForecast();">Search</button>
+    <button type="button" onclick="CtoF()" id="cf">C</button>
+    <br>
+    <br>
+    <div id="container">
+        <p id="temp"></p>
+        <p id="humi"></p>
+        <p id="wind"></p>
+    </div>
+    <br>
+    <div id="weatherc"></div>
+    <br>
+    <div id="3hours"></div>
+    <br>
+    <div id="forecast"></div>
+    <div id="test" ></div>
+    <script>
+        window.onload = dateTime();
+        
+        function dateTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        }
+
+        function showWeather() {
+            var xhttp = new XMLHttpRequest();
+            var myObj;
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    myObj = JSON.parse(xhttp.responseText);
+                    //document.getElementById("demo").innerHTML = xhttp.getAllResponseHeaders();
+                    //document.getElementById("demo1").innerHTML = xhttp.responseText;
+                    //document.getElementById("demo1").innerHTML = myObj.coord.lon;
+                    showCurrentTemp(myObj);
+                }
+            }
+
+            var name = document.getElementById('city').value;
+            var url = "http://api.openweathermap.org/data/2.5/weather?q=" + name + "&APPID=4b7983e3843620aafb3bd5745c6a32c0&units=metric";
+            xhttp.open("GET", url, true);
+            xhttp.send();
+
+            //console.log("Current state:"+xhttp.readyState +"the Status:"+xhttp.status);
+            //showContent(xhttp); 
+        }
+
+        function showCurrentTemp(json) {
+            var temp, humidity, wind, winddeg, condition;
+            temp = json.main.temp;
+            humidity = json.main.humidity;
+            wind = json.wind.speed;
+            winddeg = json.wind.deg;
+            condition = json.weather[0].description;
+
+            document.getElementById("temp").innerHTML = temp + "°";
+            document.getElementById("humi").innerHTML = "Humidity: " + humidity + "%";
+            document.getElementById("wind").innerHTML = "Wind speed: " + wind + "km/h" + "<br>" + "Wind Degree: " + winddeg;
+            document.getElementById("weatherc").innerHTML = "Weather Condition: " + condition;
+        }
+
+
+        function showForecast() {
+            var xhttp = new XMLHttpRequest();
+            var myObj;
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    myObj = JSON.parse(xhttp.responseText);
+                    //document.getElementById("forecast").innerHTML = xhttp.getAllResponseHeaders();
+                    //document.getElementById("forecast").innerHTML = xhttp.responseText;
+                    //document.getElementById("forecast").innerHTML = myObj.coord.lon;
+                    showCurrentForecast(myObj);
+                    show3hours(myObj);
+                }
+            }
+            var name = document.getElementById('city').value;
+            var url = "http://api.openweathermap.org/data/2.5/forecast?q=" + name + "&APPID=4b7983e3843620aafb3bd5745c6a32c0&units=metric";
+            xhttp.open("GET", url, true);
+            xhttp.send();
+            //console.log("Current state:"+xhttp.readyState +"the Status:"+xhttp.status);
+            //showContent(xhttp); 
+        }
+
+        function showCurrentForecast(json) {
+            var maxtemp, mintemp;
+            var out = "<table><tbody><tr>";
+            for (i = 1; i <= 5; i++) {
+                out += "<td>" + "Day " + i + "</td>";
+            }
+            out += "</tr><tr>";
+
+            for (i = 0; i <= 39; i = i + 8) {
+                maxtemp = json.list[i].main.temp_max;
+                mintemp = json.list[i].main.temp_min;
+                out += "<td>" + maxtemp + " " + mintemp + "</td>";
+            }
+            out += "</tr></tbody></table>";
+            document.getElementById("forecast").innerHTML = out;
+        }
+
+        function show3hours(json) {
+            var temp, date;
+            var out = "<table><tbody><tr>";
+            for (i = 0; i <= 7; i++) {
+                date = json.list[i].dt_txt.substr(11,12);
+                out += "<td>" + date + "</td>";
+            }
+            out += "</tr><tr>";
+
+            for (i = 0; i <= 7; i++) {
+                temp = json.list[i].main.temp;
+                out += "<td>" + temp + "</td>";
+            }
+            out += "</tr></tbody></table>";
+            document.getElementById("3hours").innerHTML = out;
+        }
+
+            function CtoF(){
+              var x = document.getElementById("cf");
+              var val = parseFloat(document.getElementById('temp').innerHTML);
+              if (x.innerHTML == "C") {
+                  x.innerHTML = "F";
+                  document.getElementById('temp').innerHTML = Math.round(val * 9.0 / 5.0 + 32) + "°";
+              } else {
+                  x.innerHTML = "C";
+                  document.getElementById('temp').innerHTML = Math.round((val -32) * 5 / 9) + "°";
+                  
+                  
+              }
+              } 
+    </script>
+    <footer>Ryerson University <br> CPS630 Weahter App Project <br> Xiangyu Lu <br> 500679658 </footer>
+</body>
+
+</html>
