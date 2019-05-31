@@ -22,8 +22,8 @@ body {
     filter: blur(5px);
 }
 
-.headerinfo{
-        position: absolute;
+.headerinfo {
+    position: absolute;
     left: 10%;
     top: 150px;
     width: 80%;
@@ -36,22 +36,27 @@ body {
     vertical-align: middle;
 }
 
-#headertext{
-        font-size: 26px;
+#headertext {
+    font-size: 26px;
     font-weight: 400;
     margin-top: 0px;
     margin-left: 220px;
 }
 
-#hdname{
+#hdname {
     font-size: 46px;
     font-weight: 400;
     color: white;
 }
 
-#hddesc{
+#hddesc {
     font-size: 18px;
     font-weight: 300;
-    margin-top: -6px;
+
     color: white;
+}
+
+#profolio{
+    font-size:46px;
+    font-weight: 200;
 }
