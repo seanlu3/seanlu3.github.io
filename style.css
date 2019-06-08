@@ -8,6 +8,27 @@ body {
     
 }
 
+button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    background-color: #f2f4f6;
+    transition-duration: 0.4s;
+    border: none;
+    color: black;
+    padding: 12px 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #c6cfff;
+    /* Green */
+    color: white;
+}
+
 .header {
     width: 100%;
     height: 500px;
@@ -59,22 +80,22 @@ body {
 }
 
 #hd-profolio{
-    font-size:40px;
+    font-size:50px;
     font-weight: 200;
     text-align: center;
     margin-bottom: 15px;
 }
 
 #headericon{
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
 }
 
 section{
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 18px;
     font-weight: 300;
     margin-block-start: 1em;
@@ -102,6 +123,14 @@ section{
         font-size: 28px;
     }
     #hddesc{
+        font-size: 16px;
+    }
+    
+    #hd-profolio{
+        font-size: 30px;
+    }
+    
+    section{
         font-size: 16px;
     }
 }
