@@ -1,0 +1,43 @@
+body {
+    font-family: 'Poppins', helvetica;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section1{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:50px;
+}
+
+.DIG{
+    display:inline-block;
+    width: 50%;
+}
+
+.diginfo{
+    color: grey;
+}
+
+.wireframe{
+    float: right;
+    width: 50%;
+    
+}
+
+.section2{
+    text-align: center;
+    
+}
