@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', helvetica;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -12,32 +12,49 @@ h1{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
 }
 
 .section1{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top:50px;
+    margin-top:30px;
+    display:inline-block;
 }
 
 .DIG{
     display:inline-block;
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
 }
 
 .diginfo{
     color: grey;
 }
 
+
+
 .wireframe{
     float: right;
-    width: 50%;
-    
+    width: 45%;
+    margin-left: 
+}
+
+#wframe{
+    width: 75%;
+    border-radius: 15px;
 }
 
 .section2{
     text-align: center;
-    
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+#ptype{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
