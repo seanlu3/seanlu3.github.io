@@ -5,56 +5,111 @@ body {
 }
 
 
-h1{
+h1 {
     font-size: 40px;
     font-weight: 200;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 24px;
     font-weight: 300;
 }
 
-.section1{
+.section1 {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top:30px;
-    display:inline-block;
+    margin-top: 30px;
+    display: inline-block;
 }
 
-.DIG{
-    display:inline-block;
+.DIG {
+    display: inline-block;
     width: 45%;
     margin-right: 5%;
 }
 
-.diginfo{
+.diginfo {
     color: grey;
+    line-height: 25px;
+}
+
+.fcolor{
+ list-style-type: none;
+}
+
+#color{
+    float: left;
+}
+
+.fcolor li img{
+    width: 40px;
 }
 
 
-
-.wireframe{
+.wireframe {
     float: right;
     width: 45%;
-    margin-left: 
+    margin-left:
 }
 
-#wframe{
+#wframe {
     width: 75%;
     border-radius: 15px;
 }
 
-.section2{
+.section2 {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 50px;
 }
 
-#ptype{
+#ptype {
     width: 100%;
     margin-top: 10px;
     border-radius: 15px;
 }
 
+
+@media (min-width: 800px) {
+    .section1 {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .section2 {
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .diginfo{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width:375px) {
+    .DIG {
+        width: 100%;
+    }
+
+    .wireframe {
+        width: 100%;
+    }
+
+    #wframe {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
