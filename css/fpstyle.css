@@ -34,30 +34,51 @@ h2 {
     line-height: 25px;
 }
 
-.fcolor{
- list-style-type: none;
+.color {
+    display: flex;
+    width: 100%;
 }
 
-#color{
+.fcolor {
+    list-style-type: none;
+    width: 90%;
+    float: right;
+   
+}
+
+#colortitle {
+    width: 10%;
+}
+
+#color {
     float: left;
 }
 
-.fcolor li img{
+.fcolor li img {
     width: 40px;
+     margin-right: 10px;
+    
 }
 
 
 .wireframe {
     float: right;
     width: 45%;
-    margin-left:
 }
 
 #wframe {
     width: 75%;
     border-radius: 15px;
 }
-
+#btn1{
+    width: 100px;
+}
+#btn2{
+    width: 250px;
+}
+#btn3{
+    width: 75px;
+}
 .section2 {
     text-align: center;
     margin-left: 10%;
@@ -83,19 +104,22 @@ h2 {
         margin-left: 15%;
         margin-right: 15%;
     }
-    .diginfo{
+
+    .diginfo {
         font-size: 20px;
     }
-    h1{
+
+    h1 {
         font-size: 60px;
     }
-    h2{
+
+    h2 {
         font-size: 40px;
     }
 
 }
 
-@media (max-width:375px) {
+@media (max-width:800px) {
     .DIG {
         width: 100%;
     }
