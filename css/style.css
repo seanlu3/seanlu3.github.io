@@ -5,7 +5,7 @@ body {
     color: #444;
     line-height: 1.4;
     font-size: 14px;
-    
+
 }
 
 button {
@@ -78,19 +78,39 @@ button:hover {
     color: white;
 }
 
-#hd-profolio{
-    font-size:50px;
+#hd-portfolio {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#hd-resume{
+    font-size: 50px;
     font-weight: 200;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#headericon{
+#hd-about{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#hd-contact{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#headericon {
     margin-top: 5px;
     display: inline-block;
 }
 
-section{
+section {
     margin-left: auto;
     margin-right: auto;
     padding-left: 5%;
@@ -100,36 +120,53 @@ section{
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;  
+    margin-inline-end: 0px;
 }
 
-@media (max-width: 700px)
-{
-    .headerinfo{
+.nav{
+   list-style-type: none;
+    display: flex;
+    background-color: black;
+}
+
+#navitem{
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 26px;
+    color: white;
+    
+}
+
+@media (max-width: 700px) {
+    .headerinfo {
         text-align: center;
         position: absolute;
         top: 100px;
-        left:0;
+        left: 0;
         width: 100%
     }
-    .headerimg{
+
+    .headerimg {
         float: none;
     }
-    #headertext{
+
+    #headertext {
         margin: 20px 0;
     }
-    #hdname{
+
+    #hdname {
         font-size: 28px;
     }
-    #hddesc{
+
+    #hddesc {
         font-size: 16px;
     }
-    
-    #hd-profolio{
+
+    #hd-profolio {
         font-size: 30px;
     }
-    
-    section{
+
+    section {
         font-size: 16px;
     }
 }
