@@ -84,21 +84,22 @@ button:hover {
     text-align: center;
     margin-bottom: 15px;
 }
-#hd-resume{
+
+#hd-resume {
     font-size: 50px;
     font-weight: 200;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#hd-about{
+#hd-about {
     font-size: 50px;
     font-weight: 200;
     text-align: center;
     margin-bottom: 15px;
 }
 
-#hd-contact{
+#hd-contact {
     font-size: 50px;
     font-weight: 200;
     text-align: center;
@@ -110,10 +111,10 @@ button:hover {
     display: inline-block;
 }
 
-#jobDescribtion{
-    width:70%;
-   
-    
+#jobDescribtion {
+    width: 70%;
+
+
 }
 
 
@@ -130,31 +131,46 @@ section {
     margin-inline-end: 0px;
 }
 
-.nav{
-   list-style-type: none;
-    display: flex;
-    background-color: black;
-}
-
-#navitem{
-    margin-right: 15px;
-    display: inline-block;
-    font-size: 26px;
-    color: white;
+#nav {
     
-}
-#resume-content{
+    overflow: hidden;
     text-align: center;
 }
-#resume-img{
+
+#nav > li {
+    list-style: none;
+    float: left;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+
+}
+
+#nav > li.highlight {
+    color: skyblue;
+}
+
+#resume-content {
+    text-align: center;
+}
+
+#resume-img {
     width: 60%;
 }
 
 
-section p{float: left;}
-section button{
+section p {
+    float: left;
+}
+
+section button {
     float: right;
 }
+
 @media (max-width: 700px) {
     .headerinfo {
         text-align: center;
