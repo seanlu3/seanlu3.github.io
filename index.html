@@ -1,143 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="">
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170984463-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-170984463-1');
-    </script>
-    <title>Sean(Xiangyu) Lu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css">
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <title>Sean Lu</title>
 </head>
 
 <body>
-    <div class="header" style="background-image: url(img/IMG_4106.jpg)"></div>
-
-    <div class="headerinfo">
-        <img src="img/ORG_DSC09140.jpg" class="headerimg">
-        <div id="headertext">
-            <div id="hdname">Sean(Xiangyu) Lu</div>
-            <div id="hddesc">Student, Ryerson Univeristy
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Sean Lu</h1>
             </div>
-            <div id="hddesc">Department of Computer Science
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="left-column">
+                    <img src="images/sean.png" id="profile_pic">
+                    <h5 style="text-align: center; line-height: 0">Personalized Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div id="light-mode" class="theme-dot"></div>
+                        <div id="blue-mode" class="theme-dot"></div>
+                        <div id="green-mode" class="theme-dot"></div>
+                        <div id="purple-mode" class="theme-dot"></div>
+                    </div>
+                    <p id="settings-note">Theme options will be saved for<br> your next visit</p>
+                </div>
+
+                <div class="right-column">
+
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>I'm a front-end developer, and very enthusiastic about the design and development. </p>
+                            <div id="corner-bl" class="corner"></div>
+                            <div id="corner-br" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="hddesc">seanlu@hotmail.ca</div>
-            <div id="headericon">
-                <a href="https://drive.google.com/file/d/13gu4Z4goGMLOTHQW589pe3AnMLwHQeVT/view"><img src="img/ic_resume.png" width="45px;"></a>
-                <a href="https://www.linkedin.com/in/-seanlu/"><img src="img/linkedin.png" width="45px;"></a>
-                <a href="https://github.com/seanlu3"><img src="img/github.png" width="45px;"></a>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+
+            <div class="about-wrapper">
+
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I'm very new to the industry, and I build projects to learn new things.</p>
+                    <p>I'm currently looking for a full-time position in Toronto. Feel free to contact me.</p>
+
+
+                    <hr>
+
+                    <h4>TOP EXPERTISE</h4>
+
+                    <p><a target="_blank" href="Sean%20Lu_Resume.pdf">Download My Resume Here</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>AngularJS</li>
+                            <li>HTML/CSS</li>
+                            <li>SQL</li>
+                        </ul>
+
+                        <ul>
+                            <li>Google Maps API</li>
+                            <li>Google Analytics</li>
+                            <li>Illustrator</li>
+                            <li>InVision</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="-seanlu"><a class="LI-simple-link" href='https://ca.linkedin.com/in/-seanlu?trk=profile-badge'>Sean Lu</a></div>
+                </div>
+
             </div>
-        </div>
-    </div>
-<!--   <ul id="nav">
-        <li id="nav_portfolio">Portfolio</li>
-        <li id="nav_resume">Resume</li>
-        <li id="nav_about">About</li>
-        <li id="nav_contact">Contact</li>
-    </ul>-->
- 
-    <div id="container">
-        <div id="portfolio">
-            <div id="hd-portfolio">Portfolio</div>
-            <section>
-                <p> Weather application that takes a city name, and outputs the city's forecast. </p>
-                <a href="https://github.com/seanlu3/Weather-App" style=""><button>Link to Github</button></a>
-            </section>
-            <br style="clear:both" />
-            <section>
-
-                <p>A geolocation web application that locates user's current location and being able to calculate the distance between the provided location data. </p>
-                <a href="https://github.com/seanlu3/Geolocation-app"><button>Link to Github</button></a>
-            </section>
-            <br style="clear:both" />
-            <section>Group project: Foogether, a recipe finder web application that uses angularJS and NodeJS as the engines</section>
-            <br style="clear:both" />
-            <section>
-                <p>Team of 2: Information Retrieval Application, able to search through a large collection of text and output results based on relevance and PageRank. Coded using Java</p>
-                <a href="https://github.com/seanlu3/Info-Retrieval-System-"><button>Link to Github</button></a>
-
-            </section>
-            <br style="clear:both" />
-            <section>
-
-                UI/UX design for an online flower shop.
-                <a href="https://projects.invisionapp.com/prototype/flowerplus-cjucpfcew0021gt019vld3vaq/play/db4f59e3
-"><button>Flowerplus</button></a>
-                <a href="flowerplus.html"><button>Digital Implementation Guide</button></a>
-            </section>
-            <br style="clear:both" />
-            <section>
-                JSClock
-                <a href="JSClock.html"><button>JSClock</button></a>
-            </section>
 
         </div>
+    </section>
 
-        <div id="resume">
-            <div id="hd-resume">Resume</div>
-            <section id="resume-content">
-                <img id="resume-img" src="img/Resume.jpg">
-
-            </section>
+    <section class="s1">
+        <div class="main-container">
+            Portfolio
         </div>
+    </section>
 
-        <div id="about">
-            <div id="hd-about">About</div>
-            <section>Recent new graduate, </section>
+    <section class="s2">
+        <div class="main-container">
+            Contact
         </div>
-
-        <div id="contact">
-            <div id="hd-contact">Contact</div>
-            <section>Email:seanlu@hotmail.ca</section>
-            <section>Phone:(647)-969-8805</section>
-
-        </div>
-    </div>
-
-
-</body>
-<script>
-    $("#nav_portfolio").click(function() {
-        $(this).addClass("highlight");
-        $(this).siblings().removeClass("highlight");
-        $("#portfolio").slideDown();
-        $("#portfolio").siblings().slideUp();
-    });
-
-    $("#nav_resume").click(function() {
-        $(this).addClass("highlight");
-        $(this).siblings().removeClass("highlight");
-        $("#resume").slideDown();
-        $("#resume").siblings().slideUp();
-    });
-
-    $("#nav_about").click(function() {
-        $(this).addClass("highlight");
-        $(this).siblings().removeClass("highlight");
-        $("#about").slideDown();
-        $("#about").siblings().slideUp();
-    });
-
-    $("#nav_contact").click(function() {
-        $(this).addClass("highlight");
-        $(this).siblings().removeClass("highlight");
-        $("#contact").slideDown();
-        $("#contact").siblings().slideUp();
-    });
-    
-    $("#nav_portfolio").click();
-
-</script>
-
-</html>
+    </section>
+</body></html>
