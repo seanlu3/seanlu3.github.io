@@ -6,7 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;family=Russo+One&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    
+   
     <title>Sean Lu</title>
 </head>
 
@@ -35,10 +38,10 @@
                     <img src="images/sean.png" id="profile_pic">
                     <h5 style="text-align: center; line-height: 0">Personalized Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">Theme options will be saved for<br> your next visit</p>
                 </div>
@@ -97,7 +100,11 @@
                 </div>
 
                 <div class="social-links">
-                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="-seanlu"><a class="LI-simple-link" href='https://ca.linkedin.com/in/-seanlu?trk=profile-badge'>Sean Lu</a></div>
+                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="-seanlu"><a class="LI-simple-link" href='https://ca.linkedin.com/in/-seanlu?trk=profile-badge'>Sean Lu</a></div>
+                    <h3> Find me on Github & Linkedin</h3>
+                    <a target="_blank" href="https://github.com/seanlu3">Github: @seanlu3</a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/-seanlu/">Linkedin: @seanlu</a>
                 </div>
 
             </div>
@@ -107,13 +114,70 @@
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some of my projects</h3>
+
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/sean.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text here</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/sean.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text here</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/sean.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text here</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+    
+     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    
+    <script type="text/javascript" src="script.js"></script>
 </body></html>
