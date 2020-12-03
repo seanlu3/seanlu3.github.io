@@ -1,0 +1,436 @@
+/* Mobile Sizes */
+
+.content
+{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    min-height: 90vh;
+}
+
+/* Contact Page */
+
+#contactINFO
+{
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contactINFO h1
+{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contactADDR, .contactPHONE, .contactMAIL
+{
+    font-size: 18px;
+}
+
+.contactADDR
+{
+    margin-bottom: 20px;
+}
+
+.contactPHONE
+{
+    margin-bottom: 20px;
+}
+
+#contactMAP
+{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#contactMAP iframe
+{
+    width: 100%;
+    height: 450px;
+}
+
+#contactCTA
+{
+    margin: 20px auto;
+    width: 90%;
+    margin-top: 0px;
+}
+
+#contactCTA p
+{
+    text-align: center;
+}
+
+.contactFORM
+{
+    display: block;
+    background-color: #DBE7DA;
+}
+
+#contact-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form h2
+{
+    align-self: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contact-form label
+{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#contact-form input
+{
+    margin-bottom: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#formmsg
+{
+    align-self: center;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+#descriptionInput
+{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+#contact-form button 
+{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: min-content;
+}
+
+#response
+{
+    margin: 0px auto;
+}
+
+/* Index Page */
+
+#covid-details
+{
+    background-color: #EBEAEA;
+}
+
+#covid-details p 
+{
+    text-align: center;
+    max-width: 800px;
+    min-width: min-content;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.home-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/heroimage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: inherit;
+}
+
+.logo
+{
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.home-content p:last-of-type
+{
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.index-cta
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+}
+
+#btnLOG, #btnUP
+{
+    background-color: #219317;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#btnLOG a, #btnUP a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+#btnLOG:hover, #btnUP:hover
+{
+    background-color: #2ac21d;
+}
+
+.home-content p
+{
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* About Page */
+
+#aboutTOP
+{
+    display: block;
+    width: 90%;
+    margin: 8% 5% auto;
+    text-align: center;
+    min-height: 200px;
+}
+
+#aboutTOP h1
+{
+    margin: 10px auto;
+    font-size: 26px;
+}
+
+#aboutTOP p
+{
+    font-size: 18px;
+    margin: auto;
+}
+
+#aboutGRID
+{
+    display: block;
+    margin: 20px auto;
+}
+
+.content-vision, .content-mission
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridIMG
+{
+    display: flex;
+    justify-content: center;
+}
+
+.gridTEXT
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+.gridTEXT h3
+{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gridTEXT p
+{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    width: 90%;
+}
+
+#aboutPARTNER
+{
+    display: block;
+    text-align: center;
+    margin: 5% auto;
+    min-height: 200px;
+}
+
+.partnerPOSI
+{
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+}
+
+#aboutPARTNER h3 
+{
+    font-size: 28px;
+    margin-top: 20px;
+    justify-self: flex-start;
+}
+
+#aboutPARTNER p
+{
+    font-size: 18px;
+    margin:auto;
+}
+
+.content-vision img, .content-mission img
+{
+    width: 100%;
+}
+
+#aboutTEAM
+{
+    margin: 20px auto;
+    background-color: #f6f6f6;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+#aboutTEAM h3
+{
+    text-align: center;
+    font-size: 28px;
+}
+
+.team-cards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.card img
+{
+    width: 50%;
+    max-width: 240px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card p
+{
+    width: fit-content;
+    text-align: center;
+}
+
+/* Tablet Sizes */
+@media(min-width: 600px)
+{
+    /* Contact Tablet */
+
+    #contactTOP
+    {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    #contactINFO
+    {
+        margin: auto 0px;
+        height: 100%;
+        width: 50%;
+    }
+
+    #contactMAP
+    {
+        width: 49%;
+        margin-right: 1%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+
+    /* Index Tablet */
+
+    /* About Tablet */
+
+    .content-vision, .content-mission
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .content-mission
+    {
+        direction: rtl;
+    }
+
+    #aboutTOP p
+    {
+        margin: auto;
+    }
+
+}
+
+
+/* Desktop Sizes */
+
+@media(min-width: 900px)
+{
+    /* Contact Desktop */
+
+    #contactTOP
+    {
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #contactINFO, #contactMAP
+    {
+        max-width: 450px;
+        height: auto;
+    }
+
+    #contact-form
+    {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Index Desktop */
+
+    /* About Desktop */
+    .team-cards
+    {
+        flex-direction: row;
+    }
+}
+

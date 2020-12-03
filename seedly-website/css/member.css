@@ -1,0 +1,264 @@
+/* member page */
+
+.member {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+#why-seed {
+    /* position: absolute; */
+
+    /* changes */
+    position: relative;
+    background-image: url(./img/banner_member.png);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* changes */
+
+#why-seed-info
+{
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+    margin-top: -50%;
+}
+
+#banner-member{
+    position: relative;
+    display: flex;
+}
+
+#question {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#answer {
+    /* position: absolute;
+    top: 300px;
+    left: 50%; 
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: 500; */
+    
+    /* Changes */
+    font-size: 36px;
+    margin: 15px auto;
+
+    line-height: 41px;
+    color: #FFFFFF;
+    padding: 5%;
+    text-align: center;
+}
+
+.sign-up {
+    /* position: absolute; */
+    width: 163px;
+    height: 36px;
+
+    /* changes */
+    position: relative;
+    margin: 15px auto;
+
+    /* top: 600px;
+    left: 50%; */
+    font-family: Actor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    background: #219317;
+    color: #FFFEFE;
+    border: none;
+    border-radius: 3px;
+}
+
+.sign-up a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* member page - our benefits */
+
+#member-benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+#benefits-title {
+    /* position: absolute; */
+    /* width: 309px;
+  height: 64px;
+  left: 560px;
+  top: 972px; */
+    text-align: center;
+    padding: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 64px;
+    color: #000000;
+}
+
+#benefits-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+/* benefit #1: learn horticulure */
+#b1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#farm {
+    /* position: absolute; */
+    width: 229px;
+    height: 232px;
+    left: 102px;
+    top: 1134px;
+}
+
+#learning {
+    /* position: absolute; */
+    width: 244px;
+    height: 177px;
+    left: 94px;
+    top: 1411px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* benefit #2: food preparation/ preservation */
+#b2 {
+    /* position: absolute; */
+    width: 334px;
+    height: 573px;
+    left: 377px;
+    top: 1106px;
+    background: #F9F9F9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* benefit #3: universal inventory database */
+#b3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#globe {
+    /* position: absolute; */
+    width: 225px;
+    height: 225px;
+    left: 781px;
+    top: 1141px;
+}
+
+#inventory-db {
+    /* position: absolute; */
+    width: 269px;
+    height: 177px;
+    left: 759px;
+    top: 1406px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* benefit #4: customer support */
+#b4 {
+    /* position: absolute; */
+    width: 334px;
+    height: 573px;
+    left: 1076px;
+    top: 1101px;
+    background: #F9F9F9;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+  /* #question {
+    left: 10%;
+    top: 20%;
+  }
+
+  #answer {
+    left: 10%;
+    top: 200px;
+  }
+
+  .sign-up {
+    left: 10%;
+    top: 480px;
+  } */
+
+  #benefits-list {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #b1 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  #b3 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Changes */
+
+@media(min-width: 600px)
+{
+  #why-seed-info
+  {
+    justify-content: space-evenly;
+  }
+
+  #answer
+  {
+    max-width: 900px;
+  }
+}

@@ -1,0 +1,191 @@
+.ser-section1 h1 {
+    font-size: 50px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#grow {
+    font-size: 20px;
+    margin-left: 10%;
+    padding-right: 50%;
+}
+
+.start-kit {
+    width: 100%;
+    clear: none;
+}
+
+.start-kit span {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    
+}
+
+.start-kit span p {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.starter-kit-more {
+    height: 300px;
+    margin-top: 25%;
+    padding-top: 50px;
+    background-color: #F2F3ED;
+    width: 100%;
+    font-size: 17px;
+}
+
+#kit1 {
+    float: left;
+    text-align: left;
+    padding-left: 15%;
+    width: 30%;
+}
+
+#kit2 {
+    float: left;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.foodprep {
+    color: white;
+    text-align: left;
+    padding: 10% 15% 10% 15%;
+    background-image: url(../img/foodprep.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.foodprep h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding-right: 30%;
+}
+
+.foodprep p {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.ongoing {
+    text-align: left;
+    padding: 10% 15% 10% 15%;
+}
+
+.ongoing h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding-right: 30%;
+}
+
+.ongoing p {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+#tractor {
+    width: 50%;
+}
+
+#build {
+    width: 40%;
+}
+
+@media screen and (min-width: 1440px){
+     .starter-kit-more{
+        height: 300px;
+        margin-top: 25%;
+        
+    }
+    #kit2{
+        padding-left: 10%;
+    }
+}
+
+
+
+@media screen and (min-width: 820px) {
+    #tractor {
+        width: 30%;
+    }
+
+    #build {
+
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .ser-section1 h1 {
+        font-size: 30px;
+    }
+
+    #grow {
+        font-size: 17px;
+        padding-right: 8%
+    }
+
+    .start-kit span p {
+        font-size: 20px;
+    }
+    
+    .starter-kit-more{
+    height: 450px;
+    margin-top: 300px;
+    padding-top: 50px;
+        
+    }
+
+    .foodprep h1 {
+        font-size: 35px;
+        padding: 0;
+
+    }
+
+    .foodprep p {
+        font-size: 25px;
+
+    }
+
+    .ongoing h1 {
+        font-size: 35px;
+        padding: 0;
+
+    }
+
+    .ongoing p {
+        font-size: 25px;
+
+    }
+
+
+}
+
+
+@media (max-width: 400px) {
+    .starter-kit-more{
+        height: 700px;
+        margin-top: 200px;
+    }
+    
+    .foodprep h1{
+        font-size:  30px;
+    }
+    .foodprep p{
+        font-size: 18px;
+    }
+    .ongoing h1{
+        font-size: 30px;
+    }
+    .ongoing p{
+        font-size: 18px;
+    }
+
+}
